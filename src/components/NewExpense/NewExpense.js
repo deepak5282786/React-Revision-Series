@@ -8,7 +8,6 @@ export const NewExpense = (props) => {
       ...enteredExpenseData,
       id: Math.random().toString(),
     };
-    // console.log("new Expenes", expenseData);
     props.onAddExpense(expenseData);
     setIsEditing(false);
   };
